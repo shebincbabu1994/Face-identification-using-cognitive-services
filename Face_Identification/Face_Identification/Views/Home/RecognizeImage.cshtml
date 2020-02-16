@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "TakeAttendance";
+}
+
+<div class="col-md-2"></div>
+<div class="col-md-4">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div id="my_camera"></div>
+            <!-- A button for taking snaps -->
+            <form method="post" enctype="multipart/form-data" action="/Home/Recognize">
+                <div>
+                    <p>Photo</p>
+                    <input type="file" name="file" />
+                </div>
+                <div>
+                    <input type="submit" value="Upload" />
+                </div>     
+            </form>
+        </div>
+    </div>
+</div>
+
+
