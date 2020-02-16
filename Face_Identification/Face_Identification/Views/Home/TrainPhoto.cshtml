@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "AddStudent";
+}
+<script src="~/js/webcamjs-master/webcam.min.js"></script>
+<div class="col-md-2"></div>
+<div class="col-md-4">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div id="my_camera"></div>
+            <!-- A button for taking snaps -->
+            <form method="post" enctype="multipart/form-data" action="/Home/UploadImage">
+                <input name="Name" />
+                <div>
+                    <p>Photo</p>
+                    <input type="file" name="files" multiple />
+                </div>
+                <div>
+                    <input type="submit" value="Upload" />
+                </div>
+                @*<input type="button" class="btn btn-success" value="Take Snapshot" onClick="take_snapshot()">*@
+            </form>
+        </div>
+    </div>
+</div>
